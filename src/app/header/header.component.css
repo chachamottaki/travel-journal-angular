@@ -18,6 +18,10 @@ body {
     padding: 1rem;
     gap: 1rem;
     font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 
