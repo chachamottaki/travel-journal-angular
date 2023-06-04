@@ -1,0 +1,23 @@
+/* @font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: url('../assets/Source_Sans_Pro/SourceSansPro-Bold.ttf');
+  } */
+
+body {
+    font-family:'Open Sans', sans-serif;
+}
+
+.header {
+    background-color: none;
+    color:black;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
