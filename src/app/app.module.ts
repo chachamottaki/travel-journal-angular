@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { EntryComponent } from './entry/entry.component';
+import { EntryFormComponent } from './entry-form/entry-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EntryComponent } from './entry/entry.component';
     HeaderComponent,
     SearchBarComponent,
     FooterComponent,
-    EntryComponent
+    EntryComponent,
+    EntryFormComponent
   ],
   imports: [
     BrowserModule,
