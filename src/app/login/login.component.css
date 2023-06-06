@@ -1,0 +1,18 @@
+div{
+    text-align: center;
+}
+
+input, textarea{
+    background-color: #FFEFE7;
+    border-radius: 10px;
+}
+.entry{
+    height:100px;
+}
+button {
+    border-radius: 10px;
+    background-color: #DCE4D1;
+}
+.container {
+    padding: 5%;
+}
