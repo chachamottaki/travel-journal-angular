@@ -7,25 +7,26 @@
     margin:1%;
     display: flex;
     justify-content: space-between;
+    background-color:#DCE4D1 ;
 }
 .entry-btn-1{
     /* position:absolute; */
     left: 50%;
-    background-color: #bbd4bf;
+    background-color: #A9D4C5;
     border-radius: 50%;;
     padding: 10px;
 }
 .entry-btn-2{
     top: 20%;
     right: 10%;
-    background-color: #6cba78;
+    background-color: #A9D4C5;
     border-radius: 50%;;
     padding: 10px;
 }
 .entry-btn-3{
     top: 30%;
     right: 10%;
-    background-color: #6cba78;
+    background-color: #A9D4C5;
     border-radius: 50%;;
     padding: 10px;
 }

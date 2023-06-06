@@ -9,6 +9,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #F4BCB8;
 }
 .center-hor {
     display: flex;
@@ -19,8 +20,9 @@
 
     border: solid 1px black;
     border-radius: 50%;
+    background-color: #FFEFE7;
 }
 .footer-txt {
-    background-color: none;
+    background-color: #F4BCB8;
     border:none;
 }
