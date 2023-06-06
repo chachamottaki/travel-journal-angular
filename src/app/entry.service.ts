@@ -10,8 +10,8 @@ export class EntryService {
 
   constructor(private http: HttpClient) { }
 
-  addEntry(journalId:string, data:any): Observable<any> {
-    return this.http.post(`${this.baseUrl}/journal/${journalId}/entry`, data);
+  addEntry(journalId:string, date:string, location:string, entry:string): Observable<any> {
+    return this.http.post(`${this.baseUrl}/journal/${journalId}/entry`, {date, location, entry});
   }
   getEntryByDate(journalId:string, dateId: string): Observable<any> {
     return this.http.get(`${this.baseUrl}/journal/${journalId}/entry/date/${dateId}`);
@@ -19,8 +19,8 @@ export class EntryService {
   getEntryByLocation(journalId:string, locationId: string): Observable<any> {
     return this.http.get(`${this.baseUrl}/journal/${journalId}/entry/date/${locationId}`);
   }
-  updateEntry(journalId:string, entryId: string, data:any): Observable<any> {
-    return this.http.put(`${this.baseUrl}/journal/${journalId}/entry/${entryId}`, data);
+  updateEntry(journalId:string, entryId: string, date:string, location:string, entry:string): Observable<any> {
+    return this.http.put(`${this.baseUrl}/journal/${journalId}/entry/${entryId}`, {date, location, entry});
   }
   deleteEntry(journalId:string, entryId: string): Observable<any> {
     return this.http.delete(`${this.baseUrl}/journal/${journalId}/entry/${entryId}`);
