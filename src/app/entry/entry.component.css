@@ -6,7 +6,7 @@
     padding:2%;
     margin:1%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .entry-btn-1{
     /* position:absolute; */
