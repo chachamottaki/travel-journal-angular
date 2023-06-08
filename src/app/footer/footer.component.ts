@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-
+  addEntry(event: Event) { 
+    console.log("Click!", event);
+  } 
 }
