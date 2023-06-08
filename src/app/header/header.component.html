@@ -2,8 +2,27 @@
 
 <div class='header'>
     <div class='title'> Travel Confessions </div>
+    <div>
+        <nav>
+            <a routerLink="/">Home</a>
+        </nav>
+    </div>
+    <div>
+        <nav>
+            <a routerLink="/entry">entry</a>
+        </nav>
+    </div>
+    <div>
+        <nav>
+            <a routerLink="/signup">Sign Up</a>
+        </nav>
+    </div>
     <div><app-search-bar></app-search-bar></div>
-    <button mat-icon-button>
-        <mat-icon>login</mat-icon>
-    </button>
+    <nav>
+        <a routerLink="/login" mat-icon-button>
+                <mat-icon>login</mat-icon>
+        </a>
+    </nav>
+    
+    
 </div>

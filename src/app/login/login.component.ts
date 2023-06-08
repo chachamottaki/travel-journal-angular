@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service'
-import { FormGroup } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -9,20 +9,26 @@ import { FormGroup } from '@angular/forms';
   providers: [UserService]
 })
 export class LoginComponent implements OnInit {
-  // formGroup:FormGroup;
+  loginForm:FormGroup;
 
-  //form function
-  // submit(){
-  //   console.log("form submitted :)")
-  // }
-
-  getLoginFromService(){
-    // this.email, this.password = this.userservice.login(email,password)
+  constructor(private userservice: UserService, private formBuilder: FormBuilder){
+    this.loginForm = this.formBuilder.group({
+      email: '',
+      password: ''
+    });
   }
 
-  constructor(private userservice: UserService){}
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-    
+  login(){
+    const email = (<string>this.loginForm.get('email')?.value);
+    const password = (<string>this.loginForm.get('password')?.value);
+    // console.log(email,password);
+      this.userservice.login(email, password).subscribe(
+        result =>{
+          localStorage.setItem('token', result.token);
+          console.log("token: ",result.token);
+          this.loginForm.reset();
+      })
   }
 }
