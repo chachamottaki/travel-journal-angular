@@ -25,7 +25,7 @@ export class SignupComponent {
     const email = (<string>this.signupForm.get('email')?.value);
     const password = (<string>this.signupForm.get('password')?.value);
     
-      this.userservice.addUser(fname, lname,email, password).subscribe(
+      this.userservice.addUser(fname, lname, email, password).subscribe(
         result =>{
           console.log(fname,lname,email);
           this.signupForm.reset();
